@@ -1,8 +1,7 @@
 <% if enhanced_cart.blank? %>
-  <h1>Your shopping cart is empty</h1>
-  <div class="alert alert-primary" role="alert">
-    <a href="#" class="alert-link"><%= link_to 'Click here to shop for items', :root %>
-  </div>
+<div>
+<h1>Your Shopping Cart is Empty!</h1>
+<%= link_to "Continue Shopping", root_path, class: 'btn btn-lg btn-primary' %>
 <% else %>
 <section class="cart-show">
 
