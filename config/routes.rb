@@ -17,6 +17,9 @@ Rails.application.routes.draw do
     resources :products, except: [:edit, :update, :show]
   end
 
+  get '/signup' => 'users#new'
+  post '/users' => 'users#create'
+
   resources :about, only: [:index]
 
   # The priority is based upon order of creation: first created -> highest priority.
