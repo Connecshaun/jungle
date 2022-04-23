@@ -18,5 +18,11 @@ RSpec.describe Product, type: :model do
       @product = Product.create(name: "Shang-Chi", price: nil, quantity: 10, category: @category)
     end
 
+    it 'contains a quantity' do
+      @category = Category.create(name: "comics")
+      @product = Product.create(name: "Shang-Chi", price: 6, quantity: nil, category: @category)
+    end
+
+    
   end
 end
